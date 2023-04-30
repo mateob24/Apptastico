@@ -10,20 +10,20 @@ header{
 
 .navUno{
   height: 130px;
+  width: 80%;
+  margin-left: 170px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 #logo{
   height: 46px;
-  margin-left: 120px;
 }
 
 #enlaces{
   width: 400px;
   font-size: 15px;
-  margin-left: 260px;
   display: flex;
   justify-content: space-around;
 }
@@ -41,17 +41,16 @@ header{
 
 .cabecera{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
 #iphone{
   height: 490px;
-  margin-left: 100px;
 }
 
 .parrafo1{
-  width: 500px;
+  width: 480px;
   height: 350px;
   display: flex;
   justify-content: space-around;
@@ -64,7 +63,7 @@ header{
 }
 
 .parrafo1 p{
-  font-size: 17px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.772);
   line-height: 30px;
 }
@@ -89,6 +88,10 @@ header{
   background-color: #3d95d1;
   border: none;
   cursor: pointer;
+}
+
+#request{
+  font-size: 15px;
 }
 
 #request:hover{
@@ -185,7 +188,7 @@ header{
 }
 
 .tituloProj{
-  width: 84%;
+  width: 82%;
   display: flex;
 }
 
@@ -201,11 +204,14 @@ header{
 }
 
 .proj{
-  width: 84%;
+  width: 82%;
   display: flex;
   justify-content: space-between;
-
 }
+
+/* .proj a{
+
+} */
 
 .imgProjects{
   height: 200px;
@@ -217,15 +223,16 @@ header{
 
 .final{
   height: 520px;
+  width: 84%;
+  margin-left: 138px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
 .comentarios{
   height: 380px;
-  width: 560px;
-  margin-right: 180px;
+  width: 520px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -235,8 +242,10 @@ header{
   height: 110px;
   width: 180px;
   border: solid 3px white;
-  box-shadow: 0px 1px 4px #8b8b8b;
+  box-shadow: 0px 1px 4px #8b8b8b;  
 }
+
+/* PARA USAR ANIMACIONES SE REQUIRE */
 
 #shape03{
   margin-right: 10px;
@@ -249,18 +258,17 @@ header{
 }
 
 .articulos{
-  width: 540px;
+  width: 520px;
   display: flex;
   justify-content: space-between;
 }
 
 .articulos h4{
-  line-height: 24px;
-  color: #787e84;
+  color: #868686;
 }
 
 .parrafo2{
-  width: 320px;
+  width: 300px;
   font-size: 13px;
   line-height: 24px;
   color: #868686;
@@ -297,7 +305,6 @@ header{
 }
 
 .twitter p{
-  width: 390px;
   font-size: 13px;
   line-height: 24px;
   color: #868686;
@@ -311,8 +318,8 @@ header{
 
 footer{
   height: 80px;
-  width: 84%;
-  margin-left: 110px;
+  width: 86%;
+  margin-left: 120px;
   border-top: solid 1px #d2d2d28a;
   display: flex;
   justify-content: space-between;
@@ -333,6 +340,267 @@ footer p{
 }
 
 
+/* --------------------- MEDIAS QUERIES --------------------- */
+
+@media screen and (max-width: 1200px){
+  .navUno{
+    width: 88%;
+    margin-left: 94px;
+  }
+
+  .textoCaja p{
+    width: 320px;
+  }
+
+  .tituloProj{
+    width: 90%;
+  }
+
+  .proj{
+    width: 90%;
+  }
+
+  .imgProjects{
+    height: 180px;
+  }
+
+  .final{
+    width: 92%;
+    margin-left: 60px;
+  }
+
+  footer{
+    width: 94%;
+    margin-left: 40px;
+  }
+}
+
+
+
+@media screen and (max-width: 992px){
+  header{
+    height: 570px;
+  }
+
+  #logo{
+    margin-left: 60px;
+  }
+
+  #enlaces{
+    width: 400px;
+    margin-left: 260px;
+  }
+
+  #iphone{
+    height: 440px;
+    margin-left: 50px;
+  }
+
+  .parrafo1{
+    height: 320px;
+    width: 440px;
+  }
+  
+  .parrafo1 h1{
+    font-size: 45px;
+  }
+  
+  .parrafo1 p{
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .botones{
+    height: 100px;
+    gap: 22px;
+    font-size: 15px;
+  }
+  
+  .botones button{
+    height: 42px;
+    padding: 10px 46px;
+    border-radius: 22px;
+  }
+
+  .info{
+    height: 460px;
+    margin-top: 30px;
+  }
+
+  .cajas{
+    height: 360px;
+  }
+
+  .textoCaja{
+    height: 120px;
+  }
+  
+
+  .textoCaja p{
+    width: 280px;
+  }
+  
+  .proj{
+    width: 90%;
+  }
+
+  .imgProjects{
+    height: 150px;
+  }
+
+  .final{
+    height: 460px;
+  }
+
+  .comentarios{
+    width: 470px;
+    margin: 0;
+  }
+
+  .articulos{
+    width: 470px;
+  }
+
+  .parrafo2{
+    width: 280px;
+  }
+
+  .twitter{
+    width: 360px;
+  }
+
+  .twitter p{
+    width: 360px;
+  }
+
+  footer{
+    margin-left: 50px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px){
+  header{
+    height: 520px;
+  }
+
+  .navUno{
+    height: 110px;
+  }
+
+  #logo{
+    margin-left: 0px;
+  }
+
+  #enlaces{
+    width: 340px;
+    margin-left: 130px;
+  }
+
+  #iphone{
+    height: 410px;
+    margin-left: 0px;
+  }
+
+  .parrafo1{
+    height: 400px;
+    width: 340px;
+  }
+  
+  .parrafo1 h1{
+    font-size: 44px;
+  }
+  
+  .parrafo1 p{
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .botones{
+    height: 80px;
+    gap: 18px;
+  }
+  
+  .botones button{
+    height: 42px;
+    padding: 0px 0px;
+    border-radius: 22px;
+  }
+
+  .botones a{
+    font-size: 14px;
+  }
+
+  #request{
+    width: 140px;
+    font-size: 14px;
+  }
+
+  .marcas{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .info{
+    height: 450px;
+  }
+
+  .cajas{
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img{
+    height: 140px;
+  }
+  
+  .textoCaja{
+    height: 120px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .textoCaja h3{
+    font-size: 20px;
+    font-weight: lighter;
+    color: #4b5760;
+  }
+  
+  .textoCaja p{
+    width: 250px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #aaaaaa;
+  }
+  
+  .cajas button{
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: solid 2px #4584b8;
+    font-weight: bold;
+    color: white;
+    background-color: #4b90cb;
+    cursor: pointer;
+  }
+}
+
+
+
+@media screen and (max-width: 600PX){
+
+}
+
+
+
+@media screen and (max-width: 480px){
+
+}
 
 
 
